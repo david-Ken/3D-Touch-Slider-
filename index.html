@@ -121,44 +121,49 @@
     </div>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
+
+
     <script>
-        // Swipe animation
-        var swiper = new Swiper('.swiper-container', {
-            effect: 'coverflow',
-            grabCursor: true,
-            // loop: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflowEffect: {
-                //    rotate: 0,
-                //  rotate: 50,
-                rotate: 60,
-                stretch: 0,
-                //  depth: 100,
-                depth: 500,
-                modifier: 1,
-                //  modifier: 5,
-                slideShadows: true,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            },
+        $(document).ready(function () {
+
+            // Swipe animation
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                // loop: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    //    rotate: 0,
+                    //  rotate: 50,
+                    rotate: 60,
+                    stretch: 0,
+                    //  depth: 100,
+                    depth: 500,
+                    modifier: 1,
+                    //  modifier: 5,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+
+            // Music :   Cadmium - Melody (feat. Jon Becker) - https://www.youtube.com/watch?v=9MiFRbymQXQ
+
+            myAudio = new Audio("song/song.mp3");
+            myAudio.addEventListener('ended', function () {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+            myAudio.play();
+
         });
-    </script>
-
-    <script>
-        // Music :   Cadmium - Melody (feat. Jon Becker) - https://www.youtube.com/watch?v=9MiFRbymQXQ
-
-        myAudio = new Audio("song/song.mp3");
-        myAudio.addEventListener('ended', function () {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-        myAudio.play();
     </script>
 </body>
 
