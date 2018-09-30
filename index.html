@@ -32,7 +32,7 @@
                     <img src="img/img2.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Mick Hallay <br><span>Web Developer</span></h3>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                     <img src="img/img3.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Christy Smile <br><span>Web Designer</span></h3>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@
                     <img src="img/img4.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Patricia Denver <br><span>Software Developer</span></h3>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@
                     <img src="img/img5.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Raven Bowie <br><span>DataMiner</span></h3>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
                     <img src="img/img6.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Franck Doe <br><span>Model & Actor</span></h3>
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
                     <img src="img/img7.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Alicia Ryio <br><span>Mobile Developer</span></h3>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@
                     <img src="img/img8.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Jazz Greatess <br><span>Musician</span></h3>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                     <img src="img/img9.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Grace Fallen <br><span>Software Engineer</span></h3>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
                     <img src="img/img10.jpeg" alt="">
                 </div>
                 <div class="details">
-                    <h3>John Doe <br><span>Web Designer</span></h3>
+                    <h3>Rebbeca Doe <br><span>Afro Winner</span></h3>
                 </div>
             </div>
         </div>
@@ -120,13 +120,17 @@
         <div class="swiper-pagination"></div>
     </div>
 
+
+
     <script src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
+        // Swipe animation
         var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
             grabCursor: true,
+            // loop: true,
             centeredSlides: true,
             slidesPerView: 'auto',
             coverflowEffect: {
@@ -144,6 +148,17 @@
                 el: '.swiper-pagination',
             },
         });
+    </script>
+
+    <script>
+        // Music :   Cadmium - Melody (feat. Jon Becker) - https://www.youtube.com/watch?v=9MiFRbymQXQ
+
+        myAudio = new Audio("song/song.mp3");
+        myAudio.addEventListener('ended', function () {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+        myAudio.play();
     </script>
 </body>
 
